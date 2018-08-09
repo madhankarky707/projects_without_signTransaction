@@ -1,0 +1,35 @@
+<div>
+  <h1 style="color:#338ecf;text-align:center;">Investor Details</h1>
+</div>
+<div classs="container">
+  <div id="invester_register">
+    <div class="container">
+                 
+                  <div class="container" style="border:3px solid #428bca;background:white;height:200px;overflow-y:auto;">
+                      <div class="col-sm-12" id="investor_detail">
+                    <h3 style="color: #338ecf;text-align:center;">Investor  Details</h3>
+                                  <table class="table table-hover" id="invesdetai_table">
+                                      <thead>
+                                        <tr>
+                                          <th><h4 style="color: black;">Investor Address</h4></th>
+                                          <th><h4 style="color: black;">Total Amount</h4></th>
+                                          <th><h4 style="color: black;">Package</h4></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr *ngFor="let investor of details;">
+                                          <td >{{investor.investor_address}}</td>
+                                          <td >{{investor.Totalamt}} </td>
+                                          <td>{{investor.pack}}</td>
+                                      </tr>
+                      
+                                      </tbody>
+                                    </table>
+                    </div>
+                </div>  
+
+       
+      </div>
+      </div>
+  </div>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  </head>
+ <body style="background-color:rgb(116, 241, 210)">
+     
+ <div class="container-fluid">
+        <nav class="navbar default " style="background-color:rgb(116, 241, 210)">
+      <div class="navbar-header">
+      </div>
+      <ul class="nav navbar-nav">
+          <li class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp; 
+              <a class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;ISSUER<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li  id="issue"><a routerLink="/addbank">Add Bank</a></li>
+                <li id="addloan"><a routerLink="/addborrower">Add Borrower</a></li>
+                <li id="addloan"><a routerLink="/addloan">Add Loan</a></li>
+                <li id="updateloan"><a routerLink="/updateloan">Update Loan</a></li>
+                <li id="createpack"><a routerLink="/createpack">Create Pool</a></li>
+                <li id="createpack"><a routerLink="/withdraw">Withdraw</a></li>
+
+              </ul>
+            </li>
+          <li class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;   
+              <a class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;SPV<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li  id="spv"><a routerLink="/spv">Purchase Pool</a></li>
+              </ul>
+            </li>
+            
+             <li class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;INVESTOR<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li  id="investor"><a routerLink="/investor">Purchase Pool</a></li>
+                </ul>
+              </li>        
+      </ul>
+    
+  </nav>
+</div>
+  </body>
+
+  </html>
+
+  

@@ -1,0 +1,32 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar ie-nav" [containerInside]="false">
+  <logo>
+      <a class="logo navbar-brand" href="#"><strong>Inventory Management</strong></a>
+  </logo>
+  <links>
+      <ul class="navbar-nav mr-auto color bg-faded">
+        <li class="nav-item waves-light" [routerLinkActive]="['active']"  mdbWavesEffect>
+            <a class="nav-link" routerLink="product" >Product</a>
+        </li>
+        <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+            <a class="nav-link"routerLink="updateproduct">Update Product</a>
+        </li>
+        <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+            <a class="nav-link"routerLink="viewcustomerorder" >View Customer</a>
+        </li>
+        <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+            <a class="nav-link"routerLink="stockproduct">Stock Products</a>
+        </li>
+        <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+            <a class="nav-link"routerLink="transferowner" >Transfer Ownership</a>
+        </li>
+        <li class="nav-item waves-light" [routerLinkActive]="['active']"mdbWavesEffect>
+            <a class="nav-link"routerLink="withdraw" >Withdraw</a>
+        </li>
+      </ul>
+      <ul style="float:right;list-style:none; " class="navbar-nav">
+          <li style="color:aliceblue">Balance:<span>{{balance}}</span></li>
+      </ul>
+     
+  </links>
+</mdb-navbar>  
+<router-outlet></router-outlet>

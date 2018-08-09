@@ -1,0 +1,70 @@
+<br>
+<br>
+<div class="container-fluid" >
+
+  <div class="row">
+
+    <div class="col-sm-1">
+    </div>
+
+<div class="col-sm-3"> 
+  <h4><b>Bank Details</b></h4>
+            <table class="table" style="overflow-y:auto;display:block;height:600px;width:195px">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Bank ID</th>
+                    <th>Bank Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let bank of banklist" >
+                    <td>{{ bank.bankid }}</td>
+                    <td>{{ bank.bankname }}</td>
+                  </tr>
+                </tbody>
+            </table>
+
+
+  
+</div>
+
+
+
+  <div class="col-sm-6">
+      <h3>Bank Registeration</h3>
+<br>
+      
+    <div class="col-sm-12">
+  
+        <div class="group">      
+            <input class="input" type="text" id="id1" #bankname required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Enter Bank Name</label>
+          </div>
+    </div>
+    <div class="col-sm-12">
+      <br>
+        <button class="btn btn-success" (click)="get_bank_Id(bankname.value)">Register</button>
+      </div>
+      <br/>
+      <br/>
+      
+    <div class="col-sm-12">
+        <br><br>
+        <h5><span><b>Note:</b></span>You can Register Multiple Banks at a time, By using comma(,) you need to separate Bank Names</h5>
+  </div>
+  
+
+ 
+
+</div>
+
+  <div class="col-sm-3">
+      
+  </div>
+<!-- row2 -->
+
+</div>
+
+<ngx-spinner></ngx-spinner>
